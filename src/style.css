@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right, white, blue);
+    padding-left: 40%;
+}
+.Calculator-Grid{
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(5,6rem);
+    text-align: center;
+}
+
+.Calculator-Grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid purple;
+    outline: none;
+    background-color: rgb(93, 218, 237);
+}
+.Calculator-Grid > button:hover,
+.Calculator-Grid > button:focus {
+    background-color: yellow;
+}
+
+.Two-buttons
+{
+    background-color: rgb(104, 182, 166);
+    grid-column: span 2;
+}
+.Output{
+    background-color: rgb(137, 116, 175);
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: space-around;
+    padding: .55rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.Previous-Operation{
+    font-size: 1.5rem;
+}
+.Current-Operation{
+    font-size: 2.5rem;
+}
